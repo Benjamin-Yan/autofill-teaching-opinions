@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <title>自動填寫教學意見調查表</title>
+   <meta name="description" content="A free online tool which allows you to bulk import bookmarks from a list of urls online. Bookmark names are optionally supported.">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col-sm-12 mx-auto p-3 mt-4 text-center">
+            <div class="header-title">
+               <h1 class="wv-heading--title">
+                  自動填寫教學意見調查表 for 東華
+               </h1>
+               <h2 class="wv-heading--subtitle p-3">
+                  在下方填入您想輸入的內容，即可產生客製的自動化腳本!(書籤格式)
+               </h2>
+            </div>
+         </div>
+      </div>
+      <div class="row no-gutters">
+         <div class="col-sm-6 mx-auto text-center">
+            <p>對於這門課我最喜歡的是: (最長1500中文字)</p>
+         </div>
+         <div class="col-sm-6 mx-auto text-center">
+            <p>對於這門課我的建議是: (最長1500中文字)</p>
+         </div>
+      </div>
+      <div class="row no-gutters">
+         <div class="col-sm-6 mx-auto">
+            <textarea class="form-control my-input" id="bookmark-urls" placeholder=""></textarea>
+         </div>
+         <div class="col-sm-6 mx-auto">
+            <textarea class="form-control my-input" id="bookmark-names" placeholder=""></textarea>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-sm-12 mx-auto mb-5">
+            <button class=" btn btn-block send-button tx-tfm text-center" id="download-button" onclick="download()">下載書籤</button>
+            <p class="small mt-3">請用電腦瀏覽器打開此頁面，使用教學請參考: <a href="https://hackmd.io/@benjaminYang12/HJORhHSI6" class="ps-hero__content__link">自動填寫教學意見 說明</a>. 最後更新日期: 2023.12.12</p>
+         </div>
+      </div>
+   </div>
+
+   <script src="scripts.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+
